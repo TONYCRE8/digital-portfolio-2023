@@ -3,25 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 29, 33, 28;
+  --background-rgb: 255, 255, 255;
+  --dark-rgb: 29, 33, 28;
+  --accent-rgb: 199, 149, 219
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+/* using dark color */
+.text-dark {
+  color: rgb(var(--dark-rgb));
+}
+.bg-dark {
+  background: rgb(var(--dark-rgb));
+}
+/* using accent color */
+.text-accent {
+  color: rgb(var(--accent-rgb));
+}
+.bg-accent {
+  background: rgb(var(--accent-rgb));
+}
+
+/* fonts */
+.font-asap {
+  font-family: var(--fontAsap);
+}
+.font-asap.font-bold {
+  font-family: var(--fontAsapBold);
+}
+.font-notoserif {
+  font-family: var(--fontNotoSerif);
+}
+
+/* footer */
+.max-sm\:footer-grid {
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+      'logo line1 line1'
+      'line2 line2 icons';
 }
