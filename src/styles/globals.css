@@ -31,13 +31,16 @@ body {
 
 /* fonts */
 .font-asap {
-  font-family: var(--fontAsap);
+  font-family: var(--font-asap);
+  font-style: normal;
 }
 .font-asap.font-bold {
-  font-family: var(--fontAsapBold);
+  font-family: var(--font-asap-bold);
+  font-style: normal;
 }
 .font-notoserif {
-  font-family: var(--fontNotoSerif);
+  font-family: var(--font-noto-serif);
+  font-style: normal;
 }
 
 /* footer */
