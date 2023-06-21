@@ -5,7 +5,7 @@ import Footer from '@/components/layout/footer';
 
 const Document = () => {
   return (
-    <Html lang="en" className={`${asap.variable} ${asapBold.variable} ${notoSerif.variable}`}>
+    <Html lang="en">
       <Head />
       <body>
         <Header />
